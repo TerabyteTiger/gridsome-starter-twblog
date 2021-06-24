@@ -1,33 +1,71 @@
 <template>
   <Layout>
+    <h1 class="text-4xl bold underline pb-4">Hello, world!</h1>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
+    <p class="text-2xl">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+      excepturi labore tempore expedita, et iste tenetur suscipit explicabo!
+      Dolores, aperiam non officia eos quod asperiores
     </p>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    <hr class="mx-8 my-4" />
+    <h2 class="text-2xl text-center">Find me online:</h2>
+    <Social />
+    <hr class="mx-8 my-4" />
 
+    <h2 class="text-2xl text-center">My Blog Posts:</h2>
+    <div
+      class="lg:grid lg:grid-flow-row lg:grid-cols-2 lg:gap-4 lg:auto-rows-auto"
+    >
+      <div
+        v-for="(edge, index) in $page.posts.edges"
+        :key="edge.node.id"
+        class="prose lg:prose-xl xl:prose-2xl lg:flex lg:flex-col"
+      >
+        <a :href="edge.node.path">
+          <h2>
+            {{ edge.node.title }}
+          </h2>
+        </a>
+        <p class="lg:flex-grow lg:justify-self-start">
+          <span class="italic">
+            Estimated {{ edge.node.timeToRead }} minute read
+          </span>
+          <br />
+          {{ edge.node.description }}
+        </p>
+        <hr class="mx-8" />
+      </div>
+    </div>
   </Layout>
 </template>
 
-<script>
-export default {
-  metaInfo: {
-    title: 'Hello, world!'
+<page-query>
+query Blog {
+  posts: allPost (sortBy: "date_published", order: DESC, filter: { published: {eq: true }}){
+    edges {
+      node {
+        id
+        title
+        description
+        tags
+        path
+        date_published
+        timeToRead
+      }
+    }
   }
 }
-</script>
+</page-query>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
+<script>
+import Social from "~/components/Social.vue";
+export default {
+  metaInfo: {
+    title: "Hello, world!",
+  },
+  components: {
+    Social,
+  },
+};
+</script>

@@ -7,6 +7,13 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^9",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-remark-prismjs-all": "^0.4.8",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

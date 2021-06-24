@@ -8,6 +8,49 @@ const tailwind = require("tailwindcss");
 const postcssPlugins = [tailwind()];
 
 module.exports = {
-  siteName: "Gridsome",
-  plugins: [],
+  siteName: "Your Brand name here",
+  plugins: [
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "blog/**/*.md",
+        typeName: "Post",
+        remark: {},
+      },
+    },
+  ],
+  transformers: {
+    remark: {
+      plugins: [
+        [
+          "remark-autolink-headings",
+          {
+            behavior: "wrap",
+            linkProperties: {
+              ariaHidden: "true",
+              tabIndex: -1,
+            },
+          },
+        ],
+        [
+          "gridsome-plugin-remark-prismjs-all",
+          {
+            showLineNumbers: true,
+            aliases: {
+              vue: "html",
+              cmd: "bash",
+              dos: "bash",
+            },
+          },
+        ],
+      ],
+    },
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins,
+      },
+    },
+  },
 };
