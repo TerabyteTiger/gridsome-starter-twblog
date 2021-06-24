@@ -36,6 +36,22 @@
   </Layout>
 </template>
 
+<script>
+export default {
+  name: "Homepage",
+  metaInfo() {
+    return {
+      meta: [
+        {
+          name: "description",
+          content: "My blog posts and musings on the world.",
+        },
+      ],
+    };
+  },
+};
+</script>
+
 <page-query>
 query Blog {
   posts: allPost (sortBy: "date_published", order: DESC, filter: { published: {eq: true }}){

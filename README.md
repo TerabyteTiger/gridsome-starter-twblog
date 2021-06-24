@@ -10,6 +10,8 @@ This blog will get you up and running quickly with a [built-in list of files you
 🎁 Pre-configured Sharing Cards & Canonical URL
 ⚡ Gridsome's quick loading speeds
 🚀 Custom Social Icons for Twitter, Youtube, Instagram, & LinkedIn
+🔗 Sitemap for showing up in Google Search Results
+☕ Formatted Codeblocks (Add filenames using `{codeTitle: "src/filename.js"}`)
 
 ## Get Started Now!
 

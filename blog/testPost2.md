@@ -18,9 +18,9 @@ From the repository you can run `gridsome develop` to spin up a local copy of th
 
 ## Files to change:
 
-_/gridsome.config.js_
+### Set your Site/Brand Name!
 
-```js
+```js{codeTitle: "gridsome.config.js"}
 module.exports = {
   // Set this to whatever you want! 👇
   // Note: This will default to be the header link back to your home page
@@ -29,9 +29,9 @@ module.exports = {
 };
 ```
 
-_/gridsome.server.js_
+### Set the Base URL for calculating Canonical URLs
 
-```js
+```js{codeTitle: "gridsome.server.js"}
 module.exports = function(api) {
   api.loadSource(async (store) => {
     // Replace https://twblog.terabytetiger.com with your website url!
@@ -43,9 +43,9 @@ module.exports = function(api) {
 
 > This is important because it will dictate what the canonical url is for your blog posts!
 
-_/src/components/Social.vue_
+### Update the Social links from mine to yours!
 
-```vue
+```vue{codeTitle: "/src/components/Social.vue"}
 // Set this to your Twitter Profile! 👇
 <a href="https://twitter.com/terabytetiger" class="inline-block">
   // ...
@@ -69,9 +69,9 @@ _/src/components/Social.vue_
 
 > Note that the social link icons provided are custom made for this project and that updating the component will update both the home page links and the links at the bottom of blog posts!
 
-_/src/Index.vue_
+### Update your home page to be about you!
 
-```vue
+```vue{codeTitle: "/src/Index.vue"}
 <template>
   <Layout>
     // Replace this with a welcome message to visitors! 👇
@@ -86,11 +86,28 @@ _/src/Index.vue_
     //...
   </Layout>
 </template>
+// ...
+<script>
+export default {
+  name: "Homepage",
+  metaInfo() {
+    return {
+      meta: [
+        {
+          name: "description",
+          // Describe what the page is about! This shows in Google Search Results👇
+          content: "My blog posts and musings on the world.",
+        },
+      ],
+    };
+  },
+};
+</script>
 ```
 
-_/src/layouts/Default.vue_
+### Update Header Background Color
 
-```vue
+```vue{codeTitle: "/src/layouts/Default.vue"}
 <template>
   <div class="layout">
     // Replace bg-blue-100 with any of the other colors Tailwind includes 👇
@@ -102,9 +119,9 @@ _/src/layouts/Default.vue_
 
 > You can find a list of tailwind background colors here: https://tailwindcss.com/docs/background-color
 
-_/src/templates/Post.vue_
+### Reroute from my Twitter handle to yours for shared posts
 
-```vue
+```vue{codeTitle: "/src/templates/Post.vue"}
 <script>
 // Skip to lines 40:
         {
@@ -122,9 +139,9 @@ _/src/templates/Post.vue_
 
 > If you want to make your Twitter shares even more enticing to click on you can add a meta item for `og:image` to populate in the Twitter card!
 
-_/src/favicon.png_
+### Update the Site Favicon
 
-```js
+```js{codeTitle: "/src/favicon.png"}
 // Replace this with an image to use as the favicon for your site!
 ```
 
@@ -142,7 +159,7 @@ To add new blog posts, create `postTitle.md` files in the `/blog/` root level fo
 
 The first thing in each of your blog post markdown file should be the following information which is required for the site to build:
 
-```md
+```md{codeTitle: "/blog/yourMarkdownFile.md"}
 ---
 title: Set Up This Blog
 published: true

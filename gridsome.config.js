@@ -18,6 +18,12 @@ module.exports = {
         remark: {},
       },
     },
+    {
+      use: "@gridsome/plugin-sitemap",
+      options: {
+        include: ["/", "/blog/**"],
+      },
+    },
   ],
   transformers: {
     remark: {
