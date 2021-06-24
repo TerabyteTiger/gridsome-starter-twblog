@@ -15,12 +15,12 @@
 
     <h2 class="text-2xl text-center">My Blog Posts:</h2>
     <div
-      class="lg:grid lg:grid-flow-row lg:grid-cols-2 lg:gap-4 lg:auto-rows-auto"
+      class="lg:grid lg:grid-flow-row lg:grid-cols-2 lg:gap-8 lg:auto-rows-auto"
     >
       <div
         v-for="(edge, index) in $page.posts.edges"
         :key="edge.node.id"
-        class="prose lg:prose-xl xl:prose-2xl lg:flex lg:flex-col"
+        class="prose lg:prose-xl xl:prose-2xl lg:flex lg:flex-col lg:pr-20"
       >
         <a :href="edge.node.path">
           <h2>
@@ -28,10 +28,6 @@
           </h2>
         </a>
         <p class="lg:flex-grow lg:justify-self-start">
-          <span class="italic">
-            Estimated {{ edge.node.timeToRead }} minute read
-          </span>
-          <br />
           {{ edge.node.description }}
         </p>
         <hr class="mx-8" />
