@@ -1,14 +1,18 @@
-# Default starter for Gridsome
+# The stylish Tailwind + Gridsome Blog
 
-This is the project you get when you run `gridsome create new-project`.
+Getting Tailwind to work with Gridsome isn't quite as straightforward as the plugins might make it seem now that Tailwind defaults to using PostCSS ^8 and Gridsome/Vue 2.X isn't compatilbe with versions greater than 7 (yet?).
 
-### 1. Install Gridsome CLI tool if you don't have
+This blog will get you up and running quickly with a [built-in list of files you need to change and what you need to change in them](https://twblog.terabytetiger.com/blog/test-post2/).
 
-`npm install --global @gridsome/cli`
+## Features
 
-### 2. Create a Gridsome project
+✨ Tailwind Pre-configured utilizing the Tailwind Typography plugin
+🎁 Pre-configured Sharing Cards & Canonical URL
+⚡ Gridsome's quick loading speeds
+🚀 Custom Social Icons for Twitter, Youtube, Instagram, & LinkedIn
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+## Get Started Now!
+
+1. `gridsome create your-repo-name https://github.com/TerabyteTiger/twblog` (replace `your-repo-name` with what you want your repository to be called)
+2. `cd your-repo-name` (same name as above)
+3. Follow the instructions [to update your site](https://twblog.terabytetiger.com/blog/test-post2/)
