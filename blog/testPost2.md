@@ -34,8 +34,8 @@ _/gridsome.server.js_
 ```js
 module.exports = function(api) {
   api.loadSource(async (store) => {
-    // Replace yourwebsite.com with your website url!
-    store.addMetadata("baseURL", "https://yourwebsite.com");
+    // Replace https://suspicious-lewin-5564e3.netlify.app with your website url!
+    store.addMetadata("baseURL", "https://suspicious-lewin-5564e3.netlify.app");
   });
   //...
 };

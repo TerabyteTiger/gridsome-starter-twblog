@@ -7,7 +7,7 @@
 
 module.exports = function(api) {
   api.loadSource(async (store) => {
-    store.addMetadata("baseURL", "https://terabytetiger.com");
+    store.addMetadata("baseURL", "https://suspicious-lewin-5564e3.netlify.app");
   });
 
   api.createPages(({ createPage }) => {
