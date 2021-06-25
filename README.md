@@ -11,7 +11,7 @@ This blog will get you up and running quickly with a [built-in list of files you
 ⚡ Gridsome's quick loading speeds
 🚀 Custom Social Icons for Twitter, Youtube, Instagram, & LinkedIn
 🔗 Sitemap for showing up in Google Search Results
-☕ Formatted Codeblocks (Add filenames using `{codeTitle: "src/filename.js"}`)
+☕ Formatted Codeblocks (Add filenames using `{codeTitle: "src/filename.js"}` after your langauge value)
 
 ## Get Started Now!
 
