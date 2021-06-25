@@ -26,6 +26,9 @@ module.exports = {
   // Set this to whatever you want! 👇
   // Note: This will default to be the header link back to your home page
   siteName: "Your Brand name here",
+  // Set this your domain/url! 👇
+  // Note: This is used by the sitemap plugin to make your site searchable on Google!
+  siteUrl: "https://twblog.terabytetiger.com",
   //..
 };
 ```

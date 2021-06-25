@@ -9,6 +9,7 @@ const postcssPlugins = [tailwind()];
 
 module.exports = {
   siteName: "Your Brand name here",
+  siteUrl: "https://twblog.terabytetiger.com",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
