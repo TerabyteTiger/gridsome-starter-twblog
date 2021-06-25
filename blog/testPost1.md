@@ -4,7 +4,7 @@ published: true
 description: This is a sample blog post. It includes a variety of example points to show what your articles will look like out of the box.
 tags: test
 date_published: "2021-06-23"
-og_image: "./og/ogImage.png"
+og_image: ./og/ogImage.png
 ---
 
 ## Heading 2

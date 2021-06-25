@@ -4,7 +4,7 @@ published: true
 description: This is a guide for everything to set up in the repository to make this place your own! Regardless of if you're new to Gridsome or just looking for the checklist of things to update when you clone this project, this post is for you!
 tags: gridsome, setup
 date_published: "2021-06-24"
-og_image: "./og/ogImage.png"
+og_image: ./og/ogImage.png
 ---
 
 ## Gridsome
@@ -166,7 +166,7 @@ title: Set Up This Blog
 published: true
 description: This is a guide for everything to set up in the repository to make this place your own!
 date_published: "2021-06-24"
-og_image: "./path/to/og/image.png"
+og_image: ./path/to/og/image.png
 ---
 ```
 
