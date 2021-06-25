@@ -4,6 +4,7 @@ published: true
 description: This is a guide for everything to set up in the repository to make this place your own! Regardless of if you're new to Gridsome or just looking for the checklist of things to update when you clone this project, this post is for you!
 tags: gridsome, setup
 date_published: "2021-06-24"
+og_image: "./og/ogImage.png"
 ---
 
 ## Gridsome
@@ -165,12 +166,15 @@ title: Set Up This Blog
 published: true
 description: This is a guide for everything to set up in the repository to make this place your own!
 date_published: "2021-06-24"
+og_image: "./path/to/og/image.png"
 ---
 ```
 
 > The `date_published` is in YYYY-MM-DD format so that the blog list on the home page can be sorted with the newest items at the top of the page.
 
 > Note that the title of the post is automatically added as the h1 tag on the post page and all markdown content should start at the `##heading 2` level to prevent accessibility issues.
+
+> `og_image` is the image that will show when the link is shared in places like Facebook or Twitter
 
 ## How to publish online
 

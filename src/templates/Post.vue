@@ -52,6 +52,10 @@ export default {
           name: "og:title",
           content: this.$page.post.title,
         },
+        {
+          name: "og:image",
+          content: this.$static.metadata.baseURL + this.$page.post.og_image.src,
+        },
       ],
       link: [
         {
@@ -71,6 +75,7 @@ query Post($id: ID!) {
     path
     content
     description
+    og_image
   }
 }
 </page-query>

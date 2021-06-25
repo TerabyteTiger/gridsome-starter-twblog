@@ -2,7 +2,7 @@
   <aside class="space-x-4 mx-auto w-max my-4">
     <a href="https://twitter.com/terabytetiger" class="inline-block">
       <g-image
-        src="~/assets/Twitter.png"
+        src="~/assets/Twitter.svg"
         width="50"
         height="50"
         class="inline-block"
@@ -14,7 +14,7 @@
       class="inline-block"
     >
       <g-image
-        src="~/assets/YT.png"
+        src="~/assets/Youtube.svg"
         width="50"
         height="50"
         class="inline-block"
@@ -23,7 +23,7 @@
     </a>
     <a href="https://www.instagram.com/t.vanblargan/" class="inline-block">
       <g-image
-        src="~/assets/IG.png"
+        src="~/assets/Instagram.svg"
         width="50"
         height="50"
         class="inline-block"
@@ -32,7 +32,7 @@
     </a>
     <a href="https://linkedin.com/" class="inline-block">
       <g-image
-        src="~/assets/LinkedIn.png"
+        src="~/assets/LinkedIn.svg"
         width="50"
         height="50"
         class="inline-block"
