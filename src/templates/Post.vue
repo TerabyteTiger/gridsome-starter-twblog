@@ -70,6 +70,7 @@ query Post($id: ID!) {
     title
     path
     content
+    description
   }
 }
 </page-query>
